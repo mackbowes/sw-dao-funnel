@@ -4,10 +4,11 @@ export default function Home() {
   return (
     <Box
       sx={{
-        width: `100vw`,
+        width: `100%`,
         minHeight: `100vh`,
         backgroundColor: `#0A0127`,
         position: `relative`,
+        overflowX: `hidden`,
       }}
     >
       <Box
@@ -17,6 +18,7 @@ export default function Home() {
           height: `auto`,
           left: `0`,
           zIndex: `0`,
+          overflowX: `hidden`,
         }}
       >
         <img src="/images/bg-01.png" alt="" style={{ position: `absolute` }} />
@@ -24,15 +26,25 @@ export default function Home() {
       <Box
         sx={{
           position: `relative`,
-          width: [`90vw`, `80vw`],
+          width: `100vw`,
           display: `flex`,
           flexDirection: `column`,
           alignItems: `center`,
           justifyContent: `flex-start`,
           margin: `0 auto`,
+          maxHeight: `100vh`,
+          overflowY: `scroll`,
+          marginTop: `1rem`,
+          background: `transparent`,
+          scrollbarWidth: `none`,
+        }}
+        css={{
+          "&::-webkit-scrollbar": {
+            display: `none`,
+          },
         }}
       >
-        <Box sx={{ minHeight: `10vh` }}></Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
         <Heading
           sx={{
             fontFamily: `Work Sans`,
@@ -44,7 +56,7 @@ export default function Home() {
         >
           The Future of DeFi is Here.
         </Heading>
-        <Box sx={{ minHeight: `10vh` }}></Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
         <Heading
           sx={{
             fontFamily: `Work Sans`,
@@ -55,20 +67,51 @@ export default function Home() {
         >
           Introducing
         </Heading>
-        <Box sx={{ minHeight: `10vh` }}></Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
         <img src="/images/swdao.png" alt="sw dao" />
         <Text
           sx={{
             textAlign: `center`,
             fontSize: `1.5rem`,
             maxWidth: [`90vw`, `40vw`],
-            marginTop: `1rem`,
           }}
         >
           Investor grade financial tools built to help you take advantage of the
           emerging DeFi economoy and grow your wealth.
         </Text>
         <Box sx={{ minHeight: `10vh` }}></Box>
+        <video
+          controls
+          style={{
+            border: `2px solid white`,
+            borderRadius: `4px`,
+            boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.5)`,
+            maxWidth: `80vw`,
+          }}
+        >
+          <source src="/videos/SW_DAO_Final.mp4" type="video/mp4" />
+        </video>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Heading
+          sx={{
+            fontFamily: `Work Sans`,
+            color: `white`,
+            fontSize: [`5vw`, `5vh`],
+            fontWeight: `200`,
+          }}
+        >
+          Public Access on December 1st
+        </Heading>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        {/* Countdown Component */}
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        {/* Email Component */}
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Heading sx={{color: `white`, fontSize: `2rem`}}>The future of Defi is accessible to you.</Heading>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{display: `grid`, gridTemplateColumns}}>
+        
+        </Box>
       </Box>
     </Box>
   );
