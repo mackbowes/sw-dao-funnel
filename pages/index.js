@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import Countdown from "../components/Countdown";
 
 export default function Home() {
   return (
@@ -103,7 +104,7 @@ export default function Home() {
           Public Access on December 1st
         </Heading>
         <Box sx={{ minHeight: `5vh` }}></Box>
-        {/* Countdown Component */}
+        <Countdown date={"December 1, 2021 12:00:00"} />
         <Box sx={{ minHeight: `5vh` }}></Box>
         {/* Email Component */}
         <Box sx={{ minHeight: `5vh` }}></Box>
@@ -118,7 +119,7 @@ export default function Home() {
             columnGap: `1rem`,
             maxWidth: [`90vw`, `60vw`],
             margin: `0 auto`,
-            fontFamily: `'Work Sans', sans-serif`
+            fontFamily: `'Work Sans', sans-serif`,
           }}
         >
           <Box
@@ -129,7 +130,7 @@ export default function Home() {
               fontSize: `2.1rem`,
               fontWeight: `500`,
               lineHeight: `1.5`,
-              borderRadius: `.5rem`
+              borderRadius: `.5rem`,
             }}
           >
             SW Dao streamlines all the complexity of DeFi and creates a
@@ -143,7 +144,7 @@ export default function Home() {
               fontSize: `1.25rem`,
               padding: `1.67rem`,
               lineHeight: `1.65`,
-              borderRadius: `.5rem`
+              borderRadius: `.5rem`,
             }}
           >
             SW Dao offers a public, on chain mutual fund that leverages
