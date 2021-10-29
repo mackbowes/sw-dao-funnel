@@ -107,10 +107,52 @@ export default function Home() {
         <Box sx={{ minHeight: `5vh` }}></Box>
         {/* Email Component */}
         <Box sx={{ minHeight: `5vh` }}></Box>
-        <Heading sx={{color: `white`, fontSize: `2rem`}}>The future of Defi is accessible to you.</Heading>
+        <Heading sx={{ color: `white`, fontSize: `2rem` }}>
+          The future of Defi is accessible to you.
+        </Heading>
         <Box sx={{ minHeight: `5vh` }}></Box>
-        <Box sx={{display: `grid`, gridTemplateColumns}}>
-        
+        <Box
+          sx={{
+            display: `grid`,
+            gridTemplateColumns: [`1fr`, `4fr 5fr`],
+            columnGap: `1rem`,
+            maxWidth: [`90vw`, `60vw`],
+            margin: `0 auto`,
+            fontFamily: `'Work Sans', sans-serif`
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: `#212274`,
+              color: `white`,
+              padding: `1.3rem`,
+              fontSize: `2.1rem`,
+              fontWeight: `500`,
+              lineHeight: `1.5`,
+              borderRadius: `.5rem`
+            }}
+          >
+            SW Dao streamlines all the complexity of DeFi and creates a
+            user-friendly experience.
+          </Box>
+          <Box
+            sx={{
+              backgroundColor: `#1d112f`,
+              color: `white`,
+              fontWeight: `300`,
+              fontSize: `1.25rem`,
+              padding: `1.67rem`,
+              lineHeight: `1.65`,
+              borderRadius: `.5rem`
+            }}
+          >
+            SW Dao offers a public, on chain mutual fund that leverages
+            world-class machine-learning and artificial intelligence to monitor
+            the DeFi market 24/7 and discover investement opportunities. Our
+            team of experienced, multidisciplinary traders assess these
+            opportunities and leverage their experience to make profitable
+            moves.
+          </Box>
         </Box>
       </Box>
     </Box>
