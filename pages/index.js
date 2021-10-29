@@ -1,5 +1,9 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Countdown from "../components/Countdown";
+import EmailComponent from "../components/EmailComponent";
+import GridComponent from "../components/GridComponent";
+import DiscordLogo from "../components/DiscordLogo.js";
+import TwitterLogo from "../components/TwitterLogo.js";
 
 export default function Home() {
   return (
@@ -38,6 +42,7 @@ export default function Home() {
           marginTop: `1rem`,
           background: `transparent`,
           scrollbarWidth: `none`,
+          padding: `3vh 0`,
         }}
         css={{
           "&::-webkit-scrollbar": {
@@ -73,14 +78,26 @@ export default function Home() {
         <Text
           sx={{
             textAlign: `center`,
-            fontSize: `1.5rem`,
+            fontSize: [`1rem`, `1.5rem`],
             maxWidth: [`90vw`, `40vw`],
+            margin: [`1rem`, `0`],
           }}
         >
           Investor grade financial tools built to help you take advantage of the
           emerging DeFi economoy and grow your wealth.
         </Text>
-        <Box sx={{ minHeight: `10vh` }}></Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Text
+          sx={{
+            textAlign: `center`,
+            fontSize: [`.9rem`, `1.2rem`],
+            maxWidth: [`90vw`, `40vw`],
+            margin: [`1rem`, `0`],
+          }}
+        >
+          Discover the SW Dao Dapp in 3 Minutes:
+        </Text>
+        <Box sx={{ minHeight: `2.5vh` }}></Box>
         <video
           controls
           style={{
@@ -97,18 +114,26 @@ export default function Home() {
           sx={{
             fontFamily: `Work Sans`,
             color: `white`,
-            fontSize: [`5vw`, `5vh`],
+            fontSize: [`4vh`, `5vh`],
             fontWeight: `200`,
+            textAlign: `center`,
           }}
         >
-          Public Access on December 1st
+          Public dApp Access on December 1st
         </Heading>
         <Box sx={{ minHeight: `5vh` }}></Box>
         <Countdown date={"December 1, 2021 12:00:00"} />
         <Box sx={{ minHeight: `5vh` }}></Box>
-        {/* Email Component */}
+        <EmailComponent />
         <Box sx={{ minHeight: `5vh` }}></Box>
-        <Heading sx={{ color: `white`, fontSize: `2rem` }}>
+        <Heading
+          sx={{
+            color: `white`,
+            fontSize: `2rem`,
+            padding: [`1rem`, 0],
+            textAlign: [`center`],
+          }}
+        >
           The future of Defi is accessible to you.
         </Heading>
         <Box sx={{ minHeight: `5vh` }}></Box>
@@ -117,6 +142,7 @@ export default function Home() {
             display: `grid`,
             gridTemplateColumns: [`1fr`, `4fr 5fr`],
             columnGap: `1rem`,
+            rowGap: `1rem`,
             maxWidth: [`90vw`, `60vw`],
             margin: `0 auto`,
             fontFamily: `'Work Sans', sans-serif`,
@@ -155,6 +181,81 @@ export default function Home() {
             moves.
           </Box>
         </Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box
+          sx={{
+            display: `grid`,
+            gridTemplateColumns: [`1fr`, `1fr 1fr`],
+            columnGap: `1rem`,
+            rowGap: `1rem`,
+            maxWidth: [`90vw`, `60vw`],
+          }}
+        >
+          <GridComponent
+            image={"/images/Options-ETH.png"}
+            alt={"Trade Eth Options"}
+            label={"Automated DeFi Gains"}
+          />
+          <GridComponent
+            image={"/images/Yield-Farming.png"}
+            alt={"Invest in Yield Farming"}
+            label={"Experienced and profitable Traders"}
+          />
+          <GridComponent
+            image={"/images/Smart-Beta-Portfolio.png"}
+            alt={"Collect Smart Beta"}
+            label={"Powered by ML & AI"}
+          />
+          <GridComponent
+            image={"/images/Social-Token-Index.png"}
+            alt={"Get exposure to top social-utility tokens"}
+            label={"Public & On Chain"}
+          />
+        </Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Text sx={{ color: `white`, textAlign: `center` }}>
+          Join the Community
+        </Text>
+        <Box
+          sx={{
+            display: `flex`,
+            flexDirection: `row`,
+            justifyContent: `space-around`,
+            margin: `2.5vh 0`,
+          }}
+        >
+          <Box
+            sx={{
+              transition: `all 0.5s linear`,
+              margin: `1rem`,
+            }}
+            _hover={{
+              cursor: `pointer`,
+              transform: `translateY(-8px)`,
+            }}
+          >
+            <a href="https://discord.com/invite/Wt3NcfJ2Em">
+              <DiscordLogo />
+            </a>
+          </Box>
+          <Box
+            sx={{
+              transition: `all 0.5s linear`,
+              margin: `1rem`,
+            }}
+            _hover={{
+              cursor: `pointer`,
+              transform: `translateY(-8px)`,
+            }}
+          >
+            <a href="https://twitter.com/sw__dao">
+              <TwitterLogo />
+            </a>
+          </Box>
+        </Box>
+        <Box sx={{ minHeight: `5vh` }}></Box>
+        <EmailComponent />
+        <Box sx={{ minHeight: `5vh` }}></Box>
       </Box>
     </Box>
   );
