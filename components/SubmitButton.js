@@ -19,6 +19,7 @@ export default function SubmitButton(props) {
         color: `black`,
         cursor: `pointer`,
       }}
+      onClick={() => props.clickFunction()}
     >
       Join The Waitlist
     </Box>

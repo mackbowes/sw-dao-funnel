@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import Countdown from "../components/Countdown";
 import EmailComponent from "../components/EmailComponent";
 import GridComponent from "../components/GridComponent";
@@ -6,6 +7,12 @@ import DiscordLogo from "../components/DiscordLogo.js";
 import TwitterLogo from "../components/TwitterLogo.js";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (data) => {
+    setEmail(data.target.value);
+  };
+
   return (
     <Box
       sx={{
@@ -20,7 +27,7 @@ export default function Home() {
         sx={{
           position: `absolute`,
           width: `100vw`,
-          height: `auto`,
+          height: `50vh`,
           left: `0`,
           zIndex: `0`,
           overflowX: `hidden`,
@@ -124,7 +131,7 @@ export default function Home() {
         <Box sx={{ minHeight: `5vh` }}></Box>
         <Countdown date={"December 1, 2021 12:00:00"} />
         <Box sx={{ minHeight: `5vh` }}></Box>
-        <EmailComponent />
+        <EmailComponent val={email} setVal={(d) => handleEmailChange(d)} />
         <Box sx={{ minHeight: `5vh` }}></Box>
         <Heading
           sx={{
@@ -254,7 +261,7 @@ export default function Home() {
           </Box>
         </Box>
         <Box sx={{ minHeight: `5vh` }}></Box>
-        <EmailComponent />
+        <EmailComponent val={email} setVal={(d) => handleEmailChange(d)} />
         <Box sx={{ minHeight: `5vh` }}></Box>
       </Box>
     </Box>
