@@ -2,6 +2,14 @@ import { useEffect, useState } from "react";
 import EmailInput from "./EmailInput";
 import SubmitButton from "./SubmitButton";
 import { Box, Text } from "@chakra-ui/react";
+import TagManager from "react-gtm-module";
+
+const gtmArgs = {
+  dataLayer: {
+    event: "button1-click",
+    conversionValue: 25,
+  },
+};
 
 export default function Email(props) {
   const val = props.val;
@@ -16,6 +24,7 @@ export default function Email(props) {
   }
 
   async function addUser() {
+    TagManager.dataLayer(gtmArgs);
     if (!validateEmail(val)) {
       setServerResponse("Invalid Email");
       setTimeout(() => {
@@ -35,7 +44,6 @@ export default function Email(props) {
     };
     const response = await fetch("/api/subscribe", req);
     const unJsond = await response.json();
-    console.log(unJsond);
     if (unJsond?.id?.length > 0) {
       setServerResponse(
         "Waitlist position secured. Check your email soon to confirm."
@@ -46,8 +54,6 @@ export default function Email(props) {
     }
     if (unJsond?.error) {
       const text = await JSON.parse(unJsond.error.response.text);
-      console.log(unJsond.error.response.text);
-      console.log(text);
       setServerResponse(`Something went wrong: ${text.title}`);
     }
   }

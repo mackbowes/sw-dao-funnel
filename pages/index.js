@@ -8,7 +8,6 @@ import TwitterLogo from "../components/TwitterLogo.js";
 
 export default function Home() {
   const [email, setEmail] = useState("");
-
   const handleEmailChange = (data) => {
     setEmail(data.target.value);
   };
@@ -31,6 +30,7 @@ export default function Home() {
           left: `0`,
           zIndex: `0`,
           overflowX: `hidden`,
+          overflowY: `hidden`,
         }}
       >
         <img src="/images/bg-01.png" alt="" style={{ position: `absolute` }} />
