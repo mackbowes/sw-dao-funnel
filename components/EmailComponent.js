@@ -4,10 +4,9 @@ import SubmitButton from "./SubmitButton";
 import { Box, Text } from "@chakra-ui/react";
 import TagManager from "react-gtm-module";
 
-const gtmArgs = {
+const emailButtonArgs = {
   dataLayer: {
-    event: "button1-click",
-    conversionValue: 25,
+    event: "email-button-click",
   },
 };
 
@@ -24,7 +23,7 @@ export default function Email(props) {
   }
 
   async function addUser() {
-    TagManager.dataLayer(gtmArgs);
+    TagManager.dataLayer(emailButtonArgs);
     if (!validateEmail(val)) {
       setServerResponse("Invalid Email");
       setTimeout(() => {

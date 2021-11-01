@@ -5,12 +5,19 @@ import EmailComponent from "../components/EmailComponent";
 import GridComponent from "../components/GridComponent";
 import DiscordLogo from "../components/DiscordLogo.js";
 import TwitterLogo from "../components/TwitterLogo.js";
+import TagManager from "react-gtm-module";
 
 export default function Home() {
   const [email, setEmail] = useState("");
   const handleEmailChange = (data) => {
     setEmail(data.target.value);
   };
+
+  const value = Math.random();
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-5XL5K7V" });
+  }, []);
 
   return (
     <Box
@@ -105,17 +112,19 @@ export default function Home() {
           Discover the SW Dao Dapp in 3 Minutes:
         </Text>
         <Box sx={{ minHeight: `2.5vh` }}></Box>
-        <video
-          controls
-          style={{
-            border: `2px solid white`,
-            borderRadius: `4px`,
-            boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.5)`,
-            maxWidth: `80vw`,
-          }}
-        >
-          <source src="/videos/SW_DAO_Final.mp4" type="video/mp4" />
-        </video>
+        <Box sx={{ width: `80vw` }}>
+          <video
+            controls
+            style={{
+              border: `2px solid white`,
+              borderRadius: `4px`,
+              boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.5)`,
+              maxWidth: `80vw`,
+            }}
+          >
+            <source src="/videos/SW_DAO_Final.mp4" type="video/mp4" />
+          </video>
+        </Box>
         <Box sx={{ minHeight: `5vh` }}></Box>
         <Heading
           sx={{

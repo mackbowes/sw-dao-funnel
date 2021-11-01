@@ -2,15 +2,14 @@ import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 import { useEffect } from "react";
-import TagManager from "react-gtm-module";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-5XL5K7V" });
-  }, []);
-
   return (
     <>
+      <Head>
+        <title>The Future Of Defi Has A Waitlist...</title>
+        <link rel="shortcut icon" href="/images/SWMark.png" />
+      </Head>
       <ChakraProvider>
         <Component {...pageProps} />
       </ChakraProvider>
