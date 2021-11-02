@@ -53,19 +53,19 @@ export default function Countdown(props) {
     >
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
         <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{days}</Heading>
-        <Text>Days</Text>
+        <Text sx={{ textAlign: `right` }}>Days</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
         <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{hours}</Heading>
-        <Text>Hours</Text>
+        <Text sx={{ textAlign: `right` }}>Hours</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
         <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{minutes}</Heading>
-        <Text>Minutes</Text>
+        <Text sx={{ textAlign: `right` }}>Minutes</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
         <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{seconds}</Heading>
-        <Text>Seconds</Text>
+        <Text sx={{ textAlign: `right` }}>Seconds</Text>
       </Box>
     </HStack>
   );
