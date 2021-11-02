@@ -53,10 +53,8 @@ export default function Home() {
           margin: `0 auto`,
           maxHeight: `100vh`,
           overflowY: `scroll`,
-          marginTop: `1rem`,
           background: `transparent`,
           scrollbarWidth: `none`,
-          padding: `3vh 0`,
         }}
         css={{
           "&::-webkit-scrollbar": {
@@ -64,10 +62,11 @@ export default function Home() {
           },
         }}
       >
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Heading
           sx={{
-            fontFamily: `Work Sans`,
+            fontFamily: `futura-pt`,
+            fontWeight: `700`,
             color: `white`,
             fontSize: [`10vw`, `12.5vh`],
             textAlign: `center`,
@@ -76,10 +75,10 @@ export default function Home() {
         >
           The Future of DeFi is Here.
         </Heading>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Heading
           sx={{
-            fontFamily: `Work Sans`,
+            fontFamily: `futura-pt`,
             color: `white`,
             fontSize: [`5vw`, `5vh`],
             fontWeight: `200`,
@@ -87,7 +86,7 @@ export default function Home() {
         >
           Introducing
         </Heading>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <img src="/images/swdao.png" alt="sw dao" />
         <Text
           sx={{
@@ -100,7 +99,7 @@ export default function Home() {
           Investor grade financial tools built to help you take advantage of the
           emerging DeFi economoy and grow your wealth.
         </Text>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Text
           sx={{
             textAlign: `center`,
@@ -111,24 +110,25 @@ export default function Home() {
         >
           Discover the SW Dao Dapp in 3 Minutes:
         </Text>
-        <Box sx={{ minHeight: `2.5vh` }}></Box>
+        <Box sx={{ minHeight: `36px` }}></Box>
         <Box sx={{ width: `80vw` }}>
           <video
             controls
             style={{
-              border: `2px solid white`,
+              border: `2px solid #212274`,
               borderRadius: `4px`,
-              boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.5)`,
-              maxWidth: `80vw`,
+              boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.2)`,
+              maxWidth: `1280px`,
+              margin: `0 auto`,
             }}
           >
             <source src="/videos/SW_DAO_Final.mp4" type="video/mp4" />
           </video>
         </Box>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Heading
           sx={{
-            fontFamily: `Work Sans`,
+            fontFamily: `futura-pt`,
             color: `white`,
             fontSize: [`4vh`, `5vh`],
             fontWeight: `200`,
@@ -137,13 +137,15 @@ export default function Home() {
         >
           Public dApp Access on December 1st
         </Heading>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Countdown date={"December 1, 2021 12:00:00"} />
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <EmailComponent val={email} setVal={(d) => handleEmailChange(d)} />
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Heading
           sx={{
+            fontFamily: `futura-pt`,
+            fontWeight: `700`,
             color: `white`,
             fontSize: `2rem`,
             padding: [`1rem`, 0],
@@ -152,26 +154,27 @@ export default function Home() {
         >
           The future of Defi is accessible to you.
         </Heading>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Box
           sx={{
             display: `grid`,
             gridTemplateColumns: [`1fr`, `4fr 5fr`],
             columnGap: `1rem`,
             rowGap: `1rem`,
-            maxWidth: [`90vw`, `60vw`],
+            maxWidth: [`90vw`, `780px`],
             margin: `0 auto`,
-            fontFamily: `'Work Sans', sans-serif`,
           }}
         >
           <Box
             sx={{
+              fontFamily: `futura-pt`,
+              fontWeight: `700`,
               backgroundColor: `#212274`,
               color: `white`,
               padding: `1.3rem`,
               fontSize: `2.1rem`,
               fontWeight: `500`,
-              lineHeight: `1.5`,
+              lineHeight: `1.3`,
               borderRadius: `.5rem`,
             }}
           >
@@ -180,12 +183,14 @@ export default function Home() {
           </Box>
           <Box
             sx={{
+              fontFamily: `futura-pt`,
+              fontWeight: `400`,
               backgroundColor: `#1d112f`,
               color: `white`,
               fontWeight: `300`,
               fontSize: `1.25rem`,
               padding: `1.67rem`,
-              lineHeight: `1.65`,
+              lineHeight: `1.2`,
               borderRadius: `.5rem`,
             }}
           >
@@ -197,14 +202,14 @@ export default function Home() {
             moves.
           </Box>
         </Box>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Box
           sx={{
             display: `grid`,
             gridTemplateColumns: [`1fr`, `1fr 1fr`],
             columnGap: `1rem`,
             rowGap: `1rem`,
-            maxWidth: [`90vw`, `60vw`],
+            maxWidth: [`90vw`, `780px`],
           }}
         >
           <GridComponent
@@ -228,7 +233,7 @@ export default function Home() {
             label={"Public & On Chain"}
           />
         </Box>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <Text sx={{ color: `white`, textAlign: `center` }}>
           Join the Community
         </Text>
@@ -269,9 +274,9 @@ export default function Home() {
             </a>
           </Box>
         </Box>
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
         <EmailComponent val={email} setVal={(d) => handleEmailChange(d)} />
-        <Box sx={{ minHeight: `5vh` }}></Box>
+        <Box sx={{ minHeight: `96px` }}></Box>
       </Box>
     </Box>
   );

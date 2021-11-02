@@ -63,7 +63,7 @@ export default function Email(props) {
         sx={{
           display: `flex`,
           justifyContent: `space-between`,
-          width: [`90vw`, `600px`],
+          width: [`90vw`, `780px`],
           flexDirection: ["column", "row"],
           alignItems: `center`,
         }}

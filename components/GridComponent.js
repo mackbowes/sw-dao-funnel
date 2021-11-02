@@ -5,9 +5,10 @@ export default function GridComponent(props) {
     <Box
       sx={{
         display: `flex`,
-        border: `1px solid rgba(255,255,255,0.35)`,
+        border: `1px solid #212274`,
         padding: `1rem`,
         alignItems: `center`,
+        borderRadius: `8px`,
       }}
     >
       <img
@@ -17,7 +18,8 @@ export default function GridComponent(props) {
       />
       <Text
         sx={{
-          fontSize: [`1rem`, `2.4vh`],
+          fontFamily: `futura-pt`,
+          fontSize: [`1.34rem`, `2.4vh`],
           color: `white`,
         }}
       >

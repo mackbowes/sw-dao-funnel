@@ -9,6 +9,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>The Future Of Defi Has A Waitlist...</title>
         <link rel="shortcut icon" href="/images/SWMark.png" />
+        <link
+          rel="stylesheet"
+          href="https://use.typekit.net/ndo3qhu.css"
+        ></link>
       </Head>
       <ChakraProvider>
         <Component {...pageProps} />

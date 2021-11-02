@@ -47,24 +47,24 @@ export default function Countdown(props) {
     <HStack
       sx={{
         color: `white`,
-        width: [`90vw`, `60vw`],
-        justifyContent: `space-around`,
+        width: [`90vw`, `780px`],
+        justifyContent: `space-between`,
       }}
     >
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
-        <Heading sx={{ fontSize: [`4rem`, `5vw`] }}>{days}</Heading>
+        <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{days}</Heading>
         <Text>Days</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
-        <Heading sx={{ fontSize: [`4rem`, `5vw`] }}>{hours}</Heading>
+        <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{hours}</Heading>
         <Text>Hours</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
-        <Heading sx={{ fontSize: [`4rem`, `5vw`] }}>{minutes}</Heading>
+        <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{minutes}</Heading>
         <Text>Minutes</Text>
       </Box>
       <Box sx={{ display: `flex`, flexDirection: `column` }}>
-        <Heading sx={{ fontSize: [`4rem`, `5vw`] }}>{seconds}</Heading>
+        <Heading sx={{ fontSize: [`3rem`, `80px`] }}>{seconds}</Heading>
         <Text>Seconds</Text>
       </Box>
     </HStack>

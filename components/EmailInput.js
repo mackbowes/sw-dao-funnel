@@ -15,6 +15,7 @@ export default function EmailInput(props) {
         color: `white`,
         margin: [`1rem`, `0`],
         marginRight: [`1rem`, `2rem`],
+        border: `1px solid #B3DCFB`,
       }}
       value={val}
       onChange={(d) => setVal(d)}
