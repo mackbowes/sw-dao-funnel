@@ -7,8 +7,12 @@ import DiscordLogo from "../components/DiscordLogo.js";
 import TwitterLogo from "../components/TwitterLogo.js";
 import TagManager from "react-gtm-module";
 
+import CookieBanner from "../components/CookieBanner";
+
 export default function Home() {
   const [email, setEmail] = useState("");
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+
   const handleEmailChange = (data) => {
     setEmail(data.target.value);
   };
@@ -16,8 +20,10 @@ export default function Home() {
   const value = Math.random();
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: "GTM-5XL5K7V" });
-  }, []);
+    if (cookiesAccepted) {
+      TagManager.initialize({ gtmId: "GTM-5XL5K7V" });
+    }
+  }, [cookiesAccepted]);
 
   return (
     <Box
@@ -29,6 +35,7 @@ export default function Home() {
         overflowX: `hidden`,
       }}
     >
+      <CookieBanner enableCookies={() => setCookiesAccepted(true)} />
       <Box
         sx={{
           position: `absolute`,
