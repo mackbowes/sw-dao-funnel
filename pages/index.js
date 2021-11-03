@@ -203,10 +203,9 @@ export default function Home() {
           >
             SW Dao offers a public, on chain mutual fund that leverages
             world-class machine-learning and artificial intelligence to monitor
-            the DeFi market 24/7 and discover investement opportunities. Our
-            team of experienced, multidisciplinary traders assess these
-            opportunities and leverage their experience to make profitable
-            moves.
+            the DeFi market 24/7 and discover investment opportunities. Our team
+            of experienced, multidisciplinary traders assess these opportunities
+            and leverage their experience to make profitable moves.
           </Box>
         </Box>
         <Box sx={{ minHeight: `96px` }}></Box>
