@@ -94,7 +94,11 @@ export default function Home() {
           Introducing
         </Heading>
         <Box sx={{ minHeight: `96px` }}></Box>
-        <img src="/images/swdao.png" alt="sw dao" />
+        <img
+          src="/images/SWDLogo2x.png"
+          alt="sw dao"
+          style={{ maxWidth: `240px`, padding: `1rem 0` }}
+        />
         <Text
           sx={{
             textAlign: `center`,
@@ -125,6 +129,7 @@ export default function Home() {
               border: `2px solid #212274`,
               borderRadius: `4px`,
               boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.2)`,
+              width: `70vw`,
               maxWidth: `1280px`,
               margin: `0 auto`,
             }}
