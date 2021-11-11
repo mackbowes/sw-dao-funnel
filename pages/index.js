@@ -82,7 +82,7 @@ export default function Home() {
         >
           The Future of DeFi is Here.
         </Heading>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Heading
           sx={{
             fontFamily: `futura-pt`,
@@ -93,7 +93,7 @@ export default function Home() {
         >
           Introducing
         </Heading>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <img
           src="/images/SWDLogo2x.png"
           alt="sw dao"
@@ -110,7 +110,7 @@ export default function Home() {
           Investor grade financial tools built to help you take advantage of the
           emerging DeFi economoy and grow your wealth.
         </Text>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Text
           sx={{
             textAlign: `center`,
@@ -129,7 +129,7 @@ export default function Home() {
               border: `2px solid #212274`,
               borderRadius: `4px`,
               boxShadow: `0px 0px 1rem 1rem rgba(0,0,0,0.2)`,
-              width: `70vw`,
+              width: `80vw`,
               maxWidth: `1280px`,
               margin: `0 auto`,
             }}
@@ -137,7 +137,7 @@ export default function Home() {
             <source src="/videos/SW_DAO_Final.mp4" type="video/mp4" />
           </video>
         </Box>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Heading
           sx={{
             fontFamily: `futura-pt`,
@@ -149,11 +149,11 @@ export default function Home() {
         >
           Public dApp Access on December 1st
         </Heading>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Countdown date={"December 1, 2021 12:00:00"} />
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`18px`, `96px`] }}></Box>
         <EmailComponent val={email} setVal={(d) => handleEmailChange(d)} />
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Heading
           sx={{
             fontFamily: `futura-pt`,
@@ -166,7 +166,7 @@ export default function Home() {
         >
           The future of Defi is accessible to you.
         </Heading>
-        <Box sx={{ minHeight: `96px` }}></Box>
+        <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
         <Box
           sx={{
             display: `grid`,
