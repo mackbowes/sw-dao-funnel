@@ -109,7 +109,7 @@ export default function Home() {
             themselves to understand exactly where their money is going when
             they invest, and why they would make that investment. To help people
             interested in accessing DeFi through our platform understand the
-            DeFi ecosystem better, and exactly what we offer, we've prepared
+            DeFi ecosystem better, and exactly what we offer, we&apos;ve prepared
             this glossary to explain some of the foundational and novel concepts
             in further depth.
           </Text>
@@ -125,10 +125,10 @@ export default function Home() {
               backgroundColor: `rgba(0,0,0,0.6)`,
             }}
           >
-            The term "DeFi Roboadvisor" is a combination of two pre-existing
+            The term &#34;DeFi Roboadvisor&#34; is a combination of two pre-existing
             concepts: DeFi, and Roboadvisors.
             <br />
-            We'll start by familiarizing ourselves with the idea of a
+            We&apos;ll start by familiarizing ourselves with the idea of a
             Roboadvisor as that idea comes from the traditional finance world.
             <br />
             <br />
@@ -136,13 +136,13 @@ export default function Home() {
             <br />
             Historically, access to financial instruments like stocks, bonds,
             options, ETFs, and so on were recommended to retail investors (
-            <strong>'retail investor'</strong> meaning a literal person and not
+            <strong>&apos;retail investor&apos;</strong> meaning a literal person and not
             a corporation, trust, or other institutional actor) by financial
             advisors.
             <br />
             This made a situation where access to the best financial advice was
             limited by the personal bandwidth of the best specific, individual
-            financial advisors - most people just didn't get good financial
+            financial advisors - most people just didn&apos;t get good financial
             advice, and were blocked from participating in financial markets.
             <br />
             <br />
@@ -155,7 +155,7 @@ export default function Home() {
             thread is that a combination of quantitative analysts and AI scan
             and analyze financial markets to make recommendations for consumers
             that are then sent directly to retail investors over the internet to
-            either act on at the retail investor's individual discretion or
+            either act on at the retail investor&apos;s individual discretion or
             automatically.
             <br />
             <br />
@@ -164,12 +164,12 @@ export default function Home() {
             of investing to a small group of expert analysts and engineers.
             <br />
             <br />
-            Next, we'll discuss DeFi.
+            Next, we&apos;ll discuss DeFi.
             <br />
             <br />
-            DeFi is short for <strong>Decentralized Finance</strong>, and it's a
+            DeFi is short for <strong>Decentralized Finance</strong>, and it&apos;s a
             newer emerging technology built on top of cryptocurrencies like
-            Ethereum. The term has the qualifier 'Decentralized' because there's
+            Ethereum. The term has the qualifier &apos;Decentralized&apos; because there&apos;s
             no one centralized exchange or governing body restricting who can or
             can not engage with those specific financial markets, or what type
             of protocols can be offered to retail investors. This is a{" "}
@@ -182,7 +182,7 @@ export default function Home() {
             shortened to TradFi) where all buy and sell orders are routed
             through a small handful of centralized exchanges.
             <br />
-            <br /> Some common DeFi protocols that we'll talk about later
+            <br /> Some common DeFi protocols that we&apos;ll talk about later
             include Liquidity Providing, Yield Farming, and Predictive Markets.
             <br />
             <br />
@@ -204,14 +204,14 @@ export default function Home() {
           >
             Quantitative analysts are specialized workers who use mathematics
             and statistics to analyze financial markets and make predictions
-            about it's behaviour to earn a profit by timing investment entries
+            about it&apos;s behaviour to earn a profit by timing investment entries
             and exits. <br />
             <br />
             Most of our team has work history as quantitative analysts at
             traditional financial institutions with strong track records.
             <br />
             <br />
-            We've taken our experience with which statistical methods work best
+            We&apos;ve taken our experience with which statistical methods work best
             and developed a custom AI to alert us when new opportunities that
             match our models appear in the DeFi Market, analyze the opportunity
             ourselves, then pass that information to our platform protocols for
@@ -238,18 +238,18 @@ export default function Home() {
             self-driving cars, and investment opportunities.
             <br />
             <br />
-            It's a pretty complex field so we won't get into the exact
+            It&apos;s a pretty complex field so we won&apos;t get into the exact
             mechanisms of how AI works, but we can explain what our AI does. We
             built a new AI to analyze data we collect from the DeFi marketplace,
             apply statistical analysis to the data in much the same way an
             expert quantitative analyst would, and alert our team about new
             opportunities for profit. <br />
             <br />
-            Our AI is pretty good, but it's still basically just a program and
-            isn't right 100% of the time. We use it to take the heavy lifting
+            Our AI is pretty good, but it&apos;s still basically just a program and
+            isn&apos;t right 100% of the time. We use it to take the heavy lifting
             out of scanning the entire marketplace (that grows and changes every
-            day), and gives our team of quantitative analysts a list of "top
-            picks" to manually analyze before making investment decisions.
+            day), and gives our team of quantitative analysts a list of &#34;top
+            picks&#34; to manually analyze before making investment decisions.
           </Text>
           <Heading as="h2" id="MachineLearning">
             Machine Learning (Artificial Intelligence)
@@ -272,18 +272,18 @@ export default function Home() {
             self-driving cars, and investment opportunities.
             <br />
             <br />
-            It's a pretty complex field so we won't get into the exact
+            It&apos;s a pretty complex field so we won&apos;t get into the exact
             mechanisms of how AI works, but we can explain what our AI does. We
             built a new AI to analyze data we collect from the DeFi marketplace,
             apply statistical analysis to the data in much the same way an
             expert quantitative analyst would, and alert our team about new
             opportunities for profit. <br />
             <br />
-            Our AI is pretty good, but it's still basically just a program and
-            isn't right 100% of the time. We use it to take the heavy lifting
+            Our AI is pretty good, but it&apos;s still basically just a program and
+            isn&apos;t right 100% of the time. We use it to take the heavy lifting
             out of scanning the entire marketplace (that grows and changes every
-            day), and gives our team of quantitative analysts a list of "top
-            picks" to manually analyze before making investment decisions.
+            day), and gives our team of quantitative analysts a list of &#34;top
+            picks&#34; to manually analyze before making investment decisions.
           </Text>
         </Box>
         <Heading
