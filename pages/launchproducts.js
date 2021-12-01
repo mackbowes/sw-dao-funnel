@@ -96,7 +96,9 @@ export default function Home() {
           launch on December 5, 2021.
         </Text>
         <Box sx={{ minHeight: `36px` }}></Box>
-        <Heading as="h2" id="DPIMomentum" sx={{margin: `1rem 0`}}>DPI Momentum</Heading>
+        <Heading as="h2" id="DPIMomentum" sx={{ margin: `1rem 0` }}>
+          DPI Momentum
+        </Heading>
         <Box sx={{ width: `80vw` }}>
           <video
             controls
@@ -109,11 +111,13 @@ export default function Home() {
               margin: `0 auto`,
             }}
           >
-            <source src="/videos/DPI_Momentum.mp4" type="video/mp4" />
+            <source src="/videos/SW_DAO_DPI_ETHEREUM.mp4" type="video/mp4" />
           </video>
         </Box>
         <Box sx={{ minHeight: `36px` }}></Box>
-        <Heading as="h2" id="YieldFarming" sx={{margin: `1rem 0`}}>Yield Farming</Heading>
+        <Heading as="h2" id="YieldFarming" sx={{ margin: `1rem 0` }}>
+          Yield Farming
+        </Heading>
         <Box sx={{ width: `80vw` }}>
           <video
             controls
@@ -126,11 +130,13 @@ export default function Home() {
               margin: `0 auto`,
             }}
           >
-            <source src="/videos/Yield_Farming.mp4" type="video/mp4" />
+            <source src="/videos/SW_DAO_YIELD_FARMING.mp4" type="video/mp4" />
           </video>
         </Box>
         <Box sx={{ minHeight: `36px` }}></Box>
-        <Heading as="h2" id="LongShortAlpha" sx={{margin: `1rem 0`}}>Long Short Alpha</Heading>
+        <Heading as="h2" id="LongShortAlpha" sx={{ margin: `1rem 0` }}>
+          Long Short Alpha
+        </Heading>
         <Box sx={{ width: `80vw` }}>
           <video
             controls
@@ -143,7 +149,7 @@ export default function Home() {
               margin: `0 auto`,
             }}
           >
-            <source src="/videos/SW_Long_Short.mp4" type="video/mp4" />
+            <source src="/videos/SW_DAO_LONG_SHORT.mp4" type="video/mp4" />
           </video>
         </Box>
         <Box sx={{ minHeight: [`7vh`, `96px`] }}></Box>
